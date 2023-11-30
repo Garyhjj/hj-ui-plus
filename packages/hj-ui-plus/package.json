@@ -1,0 +1,16 @@
+{
+  "name": "@hj-ui-plus/hj-ui-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rimraf ../../lib && vue-tsc --noEmit && vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "vite-plugin-dts": "^3.6.4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@hj-ui-plus/play",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0"
+  }
+}

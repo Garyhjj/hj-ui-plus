@@ -2,10 +2,34 @@
   "name": "hj-ui-plus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "./lib/hj-ui-plus.umd.js",
+  "module": "./lib/hj-ui-plus.es.js",
+  "types": "./lib/hj-ui-plus/index.d.ts",
+  "files": [
+    "./lib",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/hj-ui-plus/index.d.ts",
+      "require": "./lib/hj-ui-plus.umd.js",
+      "import": "./lib/hj-ui-plus.es.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview:dev": "pnpm run -C play dev",
+    "preview:build": "pnpm run -C play build",
+    "preview:play": "pnpm run -C play preview",
+    "build:lib": "pnpm run -C packages/hj-ui-plus build",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs serve",
+    "lint": "eslint \"{cli,packages,docs,example}/**/*.{js,ts,vue,jsx,tsx}\" --fix",
+    "start:verdaccio": "pnpm verdaccio",
+    "pub:local": "pnpm publish --registry http://localhost:4873/",
+    "docs:deploy": "pnpm run docs:build && gh-pages -d docs/.vitepress/dist"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +41,13 @@
     "play"
   ],
   "dependencies": {
+    "@hj-ui-plus/components": "workspace:^",
+    "@hj-ui-plus/theme-chalk": "workspace:^",
+    "@hj-ui-plus/utils": "workspace:^",
     "vue": "^3.3.9"
   },
   "devDependencies": {
+    "@hj-ui-plus/hj-ui-plus": "workspace:^",
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@vitejs/plugin-vue": "^4.5.0",
@@ -30,8 +58,10 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.18.1",
+    "gh-pages": "^6.1.0",
     "sass": "^1.69.5",
     "typescript": "^5.3.2",
+    "verdaccio": "^5.27.0",
     "vite": "^5.0.2",
     "vite-plugin-eslint": "^1.8.1",
     "vue-tsc": "^1.8.22"

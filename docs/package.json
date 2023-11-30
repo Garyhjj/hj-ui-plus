@@ -1,0 +1,24 @@
+{
+  "name": "@hj-ui-plus/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build --build",
+    "serve": "vitepress serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "minimist": "^1.2.8",
+    "vitepress": "1.0.0-rc.30"
+  },
+  "dependencies": {
+    "@hj-ui-plus/hj-ui-plus": "workspace:^",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.2"
+  }
+}
