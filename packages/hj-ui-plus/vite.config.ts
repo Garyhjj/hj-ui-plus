@@ -19,7 +19,7 @@ export default defineConfig({
       name: 'hj-ui-plus',
       fileName: format => `hj-ui-plus.${format}.js`
     },
-    outDir: path.resolve(__dirname, '../../lib'),
+    outDir: path.resolve(__dirname, '../../dist'),
     rollupOptions: {
       external: ['vue'],
       output: {

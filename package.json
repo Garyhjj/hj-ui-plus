@@ -1,22 +1,23 @@
 {
   "name": "hj-ui-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
-  "main": "./lib/hj-ui-plus.umd.js",
-  "module": "./lib/hj-ui-plus.es.js",
-  "types": "./lib/hj-ui-plus/index.d.ts",
+  "main": "./dist/hj-ui-plus.umd.js",
+  "module": "./dist/hj-ui-plus.es.js",
+  "types": "./dist/hj-ui-plus/index.d.ts",
   "files": [
-    "./lib",
+    "./dist",
     "package.json",
     "README.md"
   ],
   "exports": {
     ".": {
-      "types": "./lib/hj-ui-plus/index.d.ts",
-      "require": "./lib/hj-ui-plus.umd.js",
-      "import": "./lib/hj-ui-plus.es.js"
-    }
+      "types": "./dist/hj-ui-plus/index.d.ts",
+      "require": "./dist/hj-ui-plus.umd.js",
+      "import": "./dist/hj-ui-plus.es.js"
+    },
+    "./*": "./*"
   },
   "scripts": {
     "preview:dev": "pnpm run -C play dev",
