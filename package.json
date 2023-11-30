@@ -1,6 +1,6 @@
 {
   "name": "hj-ui-plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "type": "module",
   "main": "./lib/hj-ui-plus.umd.js",
@@ -8,7 +8,7 @@
   "types": "./lib/hj-ui-plus/index.d.ts",
   "files": [
     "./lib",
-    "./packages/hj-ui-plus/package.json",
+    "package.json",
     "README.md"
   ],
   "exports": {
@@ -41,9 +41,6 @@
     "play"
   ],
   "dependencies": {
-    "@hj-ui-plus/components": "workspace:^",
-    "@hj-ui-plus/theme-chalk": "workspace:^",
-    "@hj-ui-plus/utils": "workspace:^",
     "vue": "^3.3.9"
   },
   "devDependencies": {
@@ -64,6 +61,9 @@
     "verdaccio": "^5.27.0",
     "vite": "^5.0.2",
     "vite-plugin-eslint": "^1.8.1",
-    "vue-tsc": "^1.8.22"
+    "vue-tsc": "^1.8.22",
+    "@hj-ui-plus/components": "workspace:^",
+    "@hj-ui-plus/theme-chalk": "workspace:^",
+    "@hj-ui-plus/utils": "workspace:^"
   }
 }
