@@ -8,7 +8,7 @@
   "types": "./lib/hj-ui-plus/index.d.ts",
   "files": [
     "./lib",
-    "package.json",
+    "./packages/hj-ui-plus/package.json",
     "README.md"
   ],
   "exports": {
