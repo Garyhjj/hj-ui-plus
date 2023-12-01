@@ -36,11 +36,11 @@ export default defineConfig({
   base: build ? '/hj-ui-plus' : '/',
   lastUpdated: true,
   themeConfig: {
-    logo: '/logo.png',
+    // logo: '/logo.png',
     siteTitle: 'hj-ui-plus',
     outline: 3,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Garyhjj/hj-ui-plus' }
     ],
     nav,
     sidebar
