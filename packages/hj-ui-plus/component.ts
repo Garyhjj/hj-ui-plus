@@ -1,5 +1,6 @@
-import { HjButton } from '@hj-ui-plus/components'
+import { HjButton, HjLoopPlay } from '@hj-ui-plus/components'
 
 export default [
-  HjButton
+  HjButton,
+  HjLoopPlay
 ]

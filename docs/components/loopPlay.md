@@ -1,9 +1,9 @@
 
-# Aa aaa
+# Loop play 循环播放
 
-## 基本使用
+## 垂直方向播放
 
-<preview path="../demos/aa/aa-1.vue" title="基本使用" description=" "></preview>
+<preview path="../demos/loopPlay/y.vue" title="垂直方向播放" description=" "></preview>
 
 ## 组件 API
 

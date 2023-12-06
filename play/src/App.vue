@@ -14,6 +14,27 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <hj-loop-play style="height: 200px; width: 100px">
+    <div style="background: red; height: 50px"></div>
+    <div style="background: blue; height: 50px"></div>
+    <div style="background: green; height: 50px"></div>
+    <div style="background: yellow; height: 50px"></div>
+    <div style="background: pink; height: 50px"></div>
+    <div style="background: #0a2540; height: 50px"></div>
+    <div style="background: #777; height: 50px"></div>
+  </hj-loop-play>
+  <hj-loop-play style="height: 50px; width: 80px" direction="x">
+    <div style="display: flex">
+      <div style="background: red; height: 50px; width: 50px"></div>
+      <div style="background: blue; height: 50px; width: 50px"></div>
+      <div style="background: green; height: 50px; width: 50px"></div>
+      <div style="background: yellow; height: 50px; width: 50px"></div>
+      <div style="background: pink; height: 50px; width: 50px"></div>
+      <div style="background: #0a2540; height: 50px; width: 50px"></div>
+      <div style="background: #777; height: 50px; width: 50px"></div>
+    </div>
+  </hj-loop-play>
 </template>
 
 <style scoped>

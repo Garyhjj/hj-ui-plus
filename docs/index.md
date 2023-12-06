@@ -13,7 +13,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 组件
-      link: /components/foo
+      link: /components/loopPlay
 features: # 可选的
   - title: 💡 保持稳定的同时采用最新技术栈
     details: 基于Vue3、Vite、Element-Plus、TypeScript、Pinia、Tailwindcss等最新技术栈开发
