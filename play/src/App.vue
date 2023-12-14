@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+
+const a = ref('99999999999999999999')
+
+onMounted(() => {
+  console.log(999)
+})
 </script>
 
 <template>
@@ -14,6 +20,8 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  {{ a }}
 
   <hj-loop-play style="height: 200px; width: 100px">
     <div style="background: red; height: 50px"></div>

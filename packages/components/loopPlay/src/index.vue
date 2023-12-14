@@ -97,16 +97,3 @@ defineExpose({
   initAndStart
 })
 </script>
-
-<style scoped>
-.hj-loop-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.hj-direction-x {
-  display: flex;
-  align-items: flex-start;
-}
-</style>
