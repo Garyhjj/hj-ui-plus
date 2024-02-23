@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    './.eslintrc-auto-import.json',
-  ],
+    './.eslintrc-auto-import.json'
+  ]
 }

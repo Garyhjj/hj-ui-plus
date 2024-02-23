@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import path from 'path';
-import eslint from 'vite-plugin-eslint';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import path from 'path'
+import eslint from 'vite-plugin-eslint'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,12 +12,12 @@ export default defineConfig({
     AutoImport({
       dts: true,
       eslintrc: {
-        enabled: true,
+        enabled: true
       },
       imports: [
         // 预设
-        'vue',
-      ],
+        'vue'
+      ]
     }),
     Components({
       dts: true,
@@ -25,30 +25,31 @@ export default defineConfig({
         // example of importing Vant
         (componentName) => {
           // where `componentName` is always CapitalCase
-          if (componentName.startsWith('Hj'))
+          if (componentName.startsWith('Hj')) {
             return {
               name: componentName,
               from: '@hj-ui-plus/components',
               sideEffects: [
-                `@hj-ui-plus/theme-chalk/src/base.scss`,
-                `@hj-ui-plus/theme-chalk/src/${componentName.slice(2)}.scss`,
-              ],
-            };
-        },
-      ],
+                '@hj-ui-plus/theme-chalk/src/base.scss',
+                `@hj-ui-plus/theme-chalk/src/${componentName.slice(2)}.scss`
+              ]
+            }
+          }
+        }
+      ]
     }),
     vue(),
     vueJsx(),
-    eslint(),
+    eslint()
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   server: {
     port: 3333,
     cors: true,
-    proxy: {},
-  },
-});
+    proxy: {}
+  }
+})

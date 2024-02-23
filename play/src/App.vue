@@ -13,7 +13,7 @@ onMounted(() => {
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
 
-      <hj-button msg="good boy"></hj-button>
+      <hj-button msg="good boy">55</hj-button>
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
